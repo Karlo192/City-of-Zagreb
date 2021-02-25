@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("header.css");
+@import url("footer.css");
+
+body {
+  margin: 0px;
+}
+
+/* Anything smaller than first breakpoint 600px */
+@media (min-width: 100px) and (max-width:600px) {
+.main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 65vh);
+    margin: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 35px;
+    font-family: 'Roboto', sans-serif;
+    grid-template-areas:
+    "first"
+    "first"
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:1050px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 35px;
+    font-family: 'Roboto', sans-serif;
+    grid-template-areas:
+    "first first"
+    "first first"
+  }
+}
+
+/* Large Screens */
+@media (min-width:1050px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 41vh);
+    margin: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 35px;
+    font-family: 'Roboto', sans-serif;
+    grid-template-areas:
+    "first first first"
+    "first first first"
+  }
+}
+
+
+/*CSS for the main part*/
+.main-div {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-div a {
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.main-div a:hover {
+  color: #555f61;
+}
+
+#first {
+  grid-area: first;
+  padding: 35px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 1000ms;
+  background-color: #fffafa;
+}
+
+#first:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 300ms;
+}
+
+#image1 {
+  max-width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  transition: all 600ms ease;
+  transition-property: height, max-width;
+}
+
+#image1:hover {
+  max-width: 290px;
+  height: 290px;
+}
+
+#button {
+  padding: 15px;
+  border: 2px solid white;
+  background-color: #001f3f;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+#button:hover {
+  background-color: #001f3e;
+  border-radius: 15%;
+  transition: 500ms;
+  color: #c1c7c9;
+}

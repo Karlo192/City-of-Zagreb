@@ -1,0 +1,34 @@
+/*CSS for the header part*/
+
+.header-div {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw);
+  grid-template-rows: 9vh;
+  grid-gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #001f3f;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.header-div a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-div a:hover {
+  color: #c1c7c9;
+}
+
+.header-div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 180px;
+  text-decoration: overline;
+}

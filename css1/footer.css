@@ -1,0 +1,35 @@
+
+/*CSS for the footer part*/
+.footer-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: auto;
+  padding-bottom: 5px;
+  border: 1px solid #f2f3f4;
+}
+
+.footer-div a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-link {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#link1 a:hover {
+  color: #28589c;
+}
+
+#link2 a:hover {
+  color: #fec564;
+}
+
+#link3 a:hover {
+  color: #28589c;
+}
